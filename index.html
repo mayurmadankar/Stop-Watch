@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- name of the project  -->
+    <title>Skill Test 1st : StopWatch</title>
+    <!-- css file with styling  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- font awsome cdn link for take fonts from font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <h1 id="name">Stop-Watch</h1>
+    <!-- container contains the stopwatch  -->
+    <div class="container">
+        <!-- display the time  -->
+        <h1 id ="displayTime">00:00:00.000</h1>
+        <!-- Buttons for different functionalities -->
+        <div class="buttons">
+            <!-- stop button with onclick function to stop the watch -->
+            <button type="button" class="button1" onclick="watchStop()">PAUSE</button>
+            <!-- start button with onclick function to start the watch -->
+            <button type="button" class="button2" onclick="watchStart()">START</button>
+            <!-- reset button with onclick function to reset the button -->
+            <button type="button" class="button3" onclick="watchReset()">RESET</button>
+        </div>
+    </div>
+    <!-- javascript file with all the functionalities -->
+    <script src="script.js"></script>
+</body>
+</html>

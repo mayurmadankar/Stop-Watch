@@ -1,0 +1,114 @@
+/* google fonts to display the font family */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Noto+Sans:wght@300&family=Pangolin&family=Roboto+Mono&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+/* background color of web page */
+body{
+    background-color: white;
+}
+#displayTime {
+    font-size: 70px;
+}
+
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    #displayTime {
+        font-size: 30px; /* Adjust the font size for smaller screens */
+    }
+}
+#name{
+    text-align: center;
+    margin: 30px;
+    font-size: 5rem;
+    letter-spacing: 5xp;
+    font-family: monospace;
+    font-weight: bold;
+  
+}
+@media only screen and (max-width:768px){
+    #name{
+        font-size:50px;
+    }
+}
+/* styleing of the container which conntain the stop watch */
+.container{
+    height: 60vh;
+    width: 60vw;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    margin-top:30px ;
+    border: 3px solid rgb(255, 255, 255);
+    padding: 5px auto;
+    border-radius: 20px;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+
+/* this styling is for the timmer */
+.container h1{
+    font-family: 'Roboto Mono', monospace;
+    color:white;
+    font-size: 5 rem;
+    font-weight: 300;
+    margin:100px auto;
+}
+
+/* styling various button  */
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.buttons button {
+    color: black;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 16px 32px;
+    transition-duration: 0.4ms;
+    justify-content: space-around;
+    border-radius: 30px;
+    box-sizing: border-box;
+    font-family: "JetBrains Mono", monospace;
+    transition: box-shadow .15s, transform .15s;
+    background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+                linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+                linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+    margin-right: 30px; /* Add right margin to create space between buttons */
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+}
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .buttons button {
+        margin-right: 10px; /* Add right margin for smaller screens */
+    }
+}
+.buttons button:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+.buttons button:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+.buttons button:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+
+
+
