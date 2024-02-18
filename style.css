@@ -1,6 +1,3 @@
-/* google fonts to display the font family */
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Noto+Sans:wght@300&family=Pangolin&family=Roboto+Mono&display=swap');
-
 *{
     padding: 0;
     margin: 0;
@@ -63,10 +60,30 @@ body{
 }
 
 /* styling various button  */
-.buttons{
+.container .buttons{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+/* Add a media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 80%; 
+        left: 10%;
+    }
+    .container .buttons {
+        flex-direction: column; 
+        margin-top: 20px; 
+    }
+    .buttons button {
+        margin: 10px auto; 
+    }
+    .buttons{
+        position: absolute;
+        margin-top: 20px;
+        bottom: 2px;
+        left: 160px;
+    }
 }
 .buttons button {
     color: black;
